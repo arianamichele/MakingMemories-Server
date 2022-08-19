@@ -10,30 +10,37 @@ An app for users to log their favorite memories as well as view the memories of 
   - React
   - Node JS
 
-### USER STORIES
-1. As a user, I want a homepage to load
-2. As a user, I want to login.
-3. As a user, I want to post a memory.
-4. As a user, I want to update a memory.
-5. As a user, I want to delete a memory.
-6. As a user, I want to comment on other's memories.
-7. As a user, I want to edit my comments on other's memories.
-8. As a user, I want to delete my comments on other's memories.
-9. As a user, I want to be able to search for memories.
-10. As a user, I want to logout.
-
-### WIRE FRAMES
-![](Images/photo1.png)
-![](Images/photo2.png)
-![](Images/photo3.png)
-![](Images/photo4.png)
-![](Images/photo5.png)
-![](Images/photo6.png)
-![](Images/photo7.png)
-![](Images/photo8.png)
-
 ### ERD
 ![](Images/erd.png)
+
+### ROUTE TABLES
+
+##### User Routes
+
+| Verb   | URI Pattern            | Controller#Action |
+|--------|------------------------|-------------------|
+| POST   | `/sign-in`             | `users#signin`    |
+| PATCH  | `/change-password/`    | `users#changepw`  |
+| DELETE | `/sign-out/`           | `users#signout`   |
+
+#####  Memory Routes
+
+| Verb   | URI Pattern            | Controller#Action |
+|--------|------------------------|-------------------|
+| GET    | `/view-all-memories` | `memories#view-all` |
+| GET    | `/view-memory`        | `memories#view`    |
+| POST   | `/create-memory`      | `memories#create`  |
+| PATCH  | `/edit-memory/`       | `memories#edit`    |
+| DELETE | `/delete-memory/`     | `memories#delete`  |
+
+##### Comments Routes
+
+| Verb   | URI Pattern            | Controller#Action |
+|--------|------------------------|-------------------|
+| GET    | `/view-comments`       | `comments#view`   |
+| POST   | `/create-comment`      | `comments#create` |
+| PATCH  | `/edit-comment/`       | `comments#edit`   |
+| DELETE | `/delete-comment/`     | `comments#delete` |
 
 #### Making Memories Client Repo
 https://github.com/arianamichele/MakingMemories-Client
