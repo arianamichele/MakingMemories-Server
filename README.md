@@ -37,7 +37,6 @@ An app for users to log their favorite memories as well as view the memories of 
 
 | Verb   | URI Pattern            | Controller#Action |
 |--------|------------------------|-------------------|
-| GET    | `/view-comments`       | `comments#view`   |
 | POST   | `/create-comment`      | `comments#create` |
 | PATCH  | `/edit-comment/`       | `comments#edit`   |
 | DELETE | `/delete-comment/`     | `comments#delete` |
