@@ -1,0 +1,28 @@
+{
+  "name": "server_makingmemories",
+  "version": "1.0.0",
+  "description": "### What is this app? An app for users to log their favorite memories as well as view the memories of others. Inspired by StoryWorth in virtual form.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arianamichele/MakingMemories-Server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arianamichele/MakingMemories-Server/issues"
+  },
+  "homepage": "https://github.com/arianamichele/MakingMemories-Server#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "mongoose": "^6.5.3",
+    "nodemon": "^2.0.19"
+  }
+}
